@@ -45,10 +45,5 @@ public class XpathAxesDemo {
 		//preceding - select all node that appear before the current node in the document
 		List<WebElement> preceding = driver.findElements(By.xpath("//a[contains(text(),'Shyam')]/ancestor::tr/preceding::tr"));
 		System.out.println("Number of Preceding Node : "+preceding.size());
-		
-		
-		
-		
-		
 	}
 }
