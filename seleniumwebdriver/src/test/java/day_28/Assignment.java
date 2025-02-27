@@ -1,16 +1,16 @@
 package day_28;
 
-import java.time.Duration;
-import java.util.List;
-import java.util.Set;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Assignment {
+import java.time.Duration;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
 
+public class Assignment {
     public static void main(String[] args) {
 
         WebDriver driver = new ChromeDriver();
@@ -32,31 +32,26 @@ public class Assignment {
         // Store the main window ID
         String mainWindow = driver.getWindowHandle();
 
-        for (int i = 0; i < searchList.size(); i++) {
-            searchList.get(i).click(); // Click each link
-
-            // Get all open window handles
-            Set<String> windowHandles = driver.getWindowHandles();
-
-            // Switch to the newly opened tab
-            for (String window : windowHandles) {
-                if (!window.equals(mainWindow)) {
-                    driver.switchTo().window(window);
-                    String title = driver.getTitle();
-                    System.out.println("Window ID " + i + " : " + window + " | Title: " + title);
-
-                    // Close the window if the title matches
-                    if (title.equals("Selenium disulfide - Wikipedia")) {
-                        System.out.println("Closing window: " + window);
-                        driver.close();
-                    }
-
-                    // Switch back to the main window after closing
-                    driver.switchTo().window(mainWindow);
-                }
-            }
+        // Click each link to open in a new window
+        for (WebElement link : searchList) {
+            link.click();
         }
 
+        // Get all window handles and store them in a List
+        Set<String> windowHandles = driver.getWindowHandles();
+        List<String> windowsList = new ArrayList<>(windowHandles);
+
+        System.out.println("\nList of Window IDs and Titles:");
+        for (String window : windowsList) {
+            driver.switchTo().window(window);
+            String title = driver.getTitle();
+            System.out.println("Window ID: " + window + " | Title: " + title );
+            
+            if(title.equals("Selenium (software) - Wikipedia")) {
+            	System.out.println("closed window : "+title);
+            	driver.close();
+            }
+        }
         driver.quit();
     }
 }
