@@ -1,9 +1,11 @@
 package day_34;
 
 import java.time.Duration;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class DatePicker {
@@ -22,6 +24,7 @@ public class DatePicker {
 		//using SendKeys()
 //		driver.findElement(By.xpath("//input[@id='datepicker']")).sendKeys("05/05/2020");
 		
+		//select the month and year
 		//using datepicker
 		String year = "2026";
 		String month = "may";
@@ -36,6 +39,16 @@ public class DatePicker {
 				break;
 			}
 			driver.findElement(By.xpath("//span[@class='ui-icon ui-icon-circle-triangle-e']")).click();
+		}
+		
+		//select the date
+		List<WebElement> allData = driver.findElements(By.xpath("//table[@class='ui-datepicker-calendar']//tbody//tr/td//a"));
+		
+		for(WebElement dt : allData) {
+			if(dt.getText().equals(date)){
+				dt.click();
+				break;
+			}
 		}
 	}
 }
