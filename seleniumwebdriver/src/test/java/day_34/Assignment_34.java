@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
 
 public class Assignment_34 {
 
@@ -20,6 +21,9 @@ public static void main(String[] args) throws InterruptedException {
 		
 		//given data
 		String from = "hyd", to = "goa";
+		String Year= "2025", Month= "Jun", Date= "20"; //for departure
+		String RYear= "2025", RMonth= "Dec", RDate= "10"; //for return
+		String CityName = "hyd";
 		
 		driver.findElement(By.xpath("//a[normalize-space()='Both']")).click();
 		
@@ -28,7 +32,7 @@ public static void main(String[] args) throws InterruptedException {
 		 
 		 Thread.sleep(5000);
 		 
-		 //------------FOR SELECT THE FROM-------------------
+/*		 //------------FOR SELECT THE FROM-------------------
 		 //pass the value
 		 WebElement FromXpath = driver.findElement(By.xpath("//form[@id='both_round']//div//div//label/following-sibling::input"));
 		 FromXpath.click();
@@ -68,5 +72,115 @@ public static void main(String[] args) throws InterruptedException {
 			 list_To.click();
 			 break;
 		 }
-}
+		 
+*/		 Thread.sleep(3000);
+		 
+		 //------------FOR SELECT THE DEPARTURE-------------------
+		 //
+		 WebElement DepartureXpath = driver.findElement(By.xpath("//form[@id='both_round']//div[2]//div//input[@placeholder='Departure Date']"));
+		 DepartureXpath.click();
+		 Thread.sleep(5000);
+		 WebElement MonthXpath = driver.findElement(By.xpath("//select[@class='ui-datepicker-month']"));
+		 MonthXpath.click();
+		 Select MonthSelect = new Select(MonthXpath);
+		 MonthSelect.selectByVisibleText(Month);
+		 System.out.println("Month as be selected : "+Month);
+		 Thread.sleep(5000);
+		 List<WebElement> DateXpath = driver.findElements(By.xpath("//table[@class='ui-datepicker-calendar']//tbody//tr/td//a"));
+		 
+		 for(WebElement dt : DateXpath) {
+			 if(dt.getText().equals(Date)) {
+				 dt.click();
+				 break;
+			 }
+		 }
+		 
+		 //------------FOR SELECT THE RETURN-------------------
+		 //
+		 WebElement ReturnXpath = driver.findElement(By.xpath("//form[@id='both_round']//div[2]//div//following-sibling::div//input[@placeholder='Return Date']"));
+		 ReturnXpath.click();
+		 Thread.sleep(5000);
+		 MonthXpath = driver.findElement(By.xpath("//select[@class='ui-datepicker-month']"));
+		 MonthXpath.click();
+		 MonthSelect = new Select(MonthXpath);
+		 MonthSelect.selectByVisibleText(RMonth);
+		 System.out.println("Month as be selected : "+ RMonth);
+		 Thread.sleep(5000);
+		 DateXpath = driver.findElements(By.xpath("//table[@class='ui-datepicker-calendar']//tbody//tr/td//a"));
+		 
+		 for(WebElement dt : DateXpath) {
+			 if(dt.getText().equals(RDate)) {
+				 dt.click();
+//				 System.out.println("Selected Date : "+dt.getText());
+				 break;
+			 }
+		 }
+		 
+		 Thread.sleep(5000);
+		 
+		 //-------------------For Select City----------------
+		 //
+		 WebElement CityXpath = driver.findElement(By.xpath("//form[@id='both_round']//div[4]//div/div/input[@name='city[]']"));
+		 CityXpath.click();
+		 Thread.sleep(3000);
+		 CityXpath.sendKeys(CityName);
+		 List<WebElement> CityList = driver.findElements(By.xpath("//form[@id='both_round']//div[4]//div//ul/li/div/p"));
+		 System.out.println(CityList.size());
+		 
+		 for(WebElement list_city : CityList) {
+				Thread.sleep(3000);
+				list_city.click();
+				break;
+			 }
+		 
+		 Thread.sleep(3000);
+		
+		 //-------------------For Select CheckIN----------------
+		 
+		 WebElement CheckinXpath = driver.findElement(By.xpath("//form[@id='both_round']//div[4]//div[2]//div/input[@name='checkin[]']"));
+		 CheckinXpath.click();
+		 Thread.sleep(3000);
+		 MonthXpath = driver.findElement(By.xpath("//select[@class='ui-datepicker-month']"));
+		 MonthXpath.click();
+		 MonthSelect = new Select(MonthXpath);
+		 MonthSelect.selectByVisibleText(RMonth);
+		 System.out.println("Month as be selected : "+ RMonth);
+		 Thread.sleep(5000);
+		 DateXpath = driver.findElements(By.xpath("//table[@class='ui-datepicker-calendar']//tbody//tr/td//a"));
+		 
+		 for(WebElement dt : DateXpath) {
+			 if(dt.getText().equals(RDate)) {
+				 dt.click();
+				 break;
+			 }
+		 }
+		
+		 Thread.sleep(3000);
+		 
+		 //-------------------For Select CheckOut----------------
+		 
+		 WebElement CheckoutXpath = driver.findElement(By.xpath("//form[@id='both_round']//div[4]//div[2]//div[2]//input[@name='checkout[]']"));
+		 CheckoutXpath.click();
+		 Thread.sleep(3000);
+		 MonthXpath = driver.findElement(By.xpath("//select[@class='ui-datepicker-month']"));
+		 MonthXpath.click();
+		 MonthSelect = new Select(MonthXpath);
+		 MonthSelect.selectByVisibleText(RMonth);
+		 System.out.println("Month as be selected : "+ RMonth);
+		 Thread.sleep(5000);
+		 DateXpath = driver.findElements(By.xpath("//table[@class='ui-datepicker-calendar']//tbody//tr/td//a"));
+		 
+		 for(WebElement dt : DateXpath) {
+			 if(dt.getText().equals(RDate)) {
+				 dt.click();
+				 break;
+			 }
+		 }
+		 
+		 Thread.sleep(3000);
+		 
+		 // Select Submit Buttom
+		 WebElement SubmitXpath = driver.findElement(By.xpath("//form[@id='both_round']//div[7]//div//input"));
+		 SubmitXpath.click();
+	}
 }
