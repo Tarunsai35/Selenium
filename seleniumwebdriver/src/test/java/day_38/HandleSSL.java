@@ -15,5 +15,7 @@ public static void main(String[] args) {
 		
 		driver.get("https://expired.badssl.com/");
 		System.out.println("Current url : "+driver.getCurrentUrl());
+
+
 	}
 }
