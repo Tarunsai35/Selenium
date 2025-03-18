@@ -37,20 +37,17 @@
 			<version>2.11.0</version>
 		</dependency>
 
-		<!-- Apache POI for Excel Handling -->
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi-ooxml</artifactId>
-			<version>5.2.5</version>
-		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+		<!-- Apache POI (Excel Handling) - Using same version for consistency -->
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
-			<version>5.3.0</version>
+			<version>5.2.3</version> <!-- Use the same version for both -->
 		</dependency>
-
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>5.2.3</version>
+		</dependency>
 
 		<!-- Extent Reports -->
 		<dependency>
@@ -59,12 +56,25 @@
 			<version>5.1.1</version>
 		</dependency>
 
+		<!-- Log4j Dependencies -->
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>2.24.3</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+			<version>2.24.3</version>
+		</dependency>
 
+		<!-- Automation QA Custom Dependency -->
 		<dependency>
 			<groupId>AutomationQA</groupId>
 			<artifactId>AutomationDemo</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
+
 
 </project>
