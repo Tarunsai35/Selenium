@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-03-20T17:11:04 IST" name="Suite" finished-at="2025-03-20T17:11:27 IST" duration-ms="23280">
+    <groups>
+    </groups>
+    <test started-at="2025-03-20T17:11:04 IST" name="Test" finished-at="2025-03-20T17:11:27 IST" duration-ms="23280">
+      <class name="day_42.OrangeHMRTest">
+        <test-method signature="openapp()[pri:1, instance:day_42.OrangeHMRTest@248e319b]" started-at="2025-03-20T17:11:04 IST" name="openapp" finished-at="2025-03-20T17:11:23 IST" duration-ms="19259" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openapp -->
+        <test-method signature="testlogo()[pri:2, instance:day_42.OrangeHMRTest@248e319b]" started-at="2025-03-20T17:11:23 IST" name="testlogo" finished-at="2025-03-20T17:11:25 IST" duration-ms="1484" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testlogo -->
+        <test-method signature="testlogin()[pri:3, instance:day_42.OrangeHMRTest@248e319b]" started-at="2025-03-20T17:11:25 IST" name="testlogin" finished-at="2025-03-20T17:11:26 IST" duration-ms="880" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testlogin -->
+        <test-method signature="testlogout()[pri:4, instance:day_42.OrangeHMRTest@248e319b]" started-at="2025-03-20T17:11:26 IST" name="testlogout" finished-at="2025-03-20T17:11:27 IST" duration-ms="1145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testlogout -->
+      </class> <!-- day_42.OrangeHMRTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

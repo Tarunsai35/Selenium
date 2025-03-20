@@ -10,3 +10,36 @@
 --------------Assignment------------
 https://www.cit.com/cit-bank/resources/calculators/certificate-of-deposit-calculator
 
+--------------Day 42---------------------
+TestNG -> Test Next Generation
+java based unit testing tool
+
+Advantages:
+1.Test cases & test suit
+2.Grouping of test cases
+3.Prioritize
+4.Parameterization
+5.Parallel Testing
+6.Reports
+
+TestNG Configuration
+Install TestNG in eclipse
+add dependence in pom.xml
+
+@Test -> Annotation
+
+1.TestNG execute test methods based on alphabetical order.
+2. @Test(priority=num) controls the order of execution.
+3.Once you provide priorty to the test methods, then order of methods is not considered.
+4.priorities can be random numbers (no need to have consecutive numbers) 4
+5.If you dont provide priority then default value is Zero (0).
+6.If the priorities are same then again execute methods in alphabetical order.
+7.Negitive values are allowed in priority.
+8.TestNG execute test methods only if they are having @Test annotation.
+
+Test Suit---> Test Cases---> TestSteps
+xml file-->Classes--->Test Methods
+
+
+
+
