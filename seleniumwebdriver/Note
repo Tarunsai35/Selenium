@@ -40,6 +40,54 @@ add dependence in pom.xml
 Test Suit---> Test Cases---> TestSteps
 xml file-->Classes--->Test Methods
 
+------------------------Day 43-------------------------
+-------------Annotations-------------------
+
+@Test
+
+@BeforeMethod
+@AfterMethod
+
+@BeforeClass
+@AfterClass
+
+@BeforeTest
+@AfterTest
+
+@BeforeSuit
+@AfterSuit
+
+TC1--->  
+Login  ---> @BeforeMethod 
+Search  ---> @Test
+Logout ---> @AfterMethod
+Login
+Adv Search  --->@Test
+Logout
+
+TC2--->  
+Login  ---> @BeforeClass
+Search  ---> @Test
+Adv Search  --->@Test
+Logout  --->@AfterClass
+
+Assertion --> Validation point
+
+Kinds of Assertion-->2 types
+Hard Assertion:
+we can access from "Assert" class methods are static
+if hard assertion failed then rest of the statements will not be executed.
+Soft Assertion:
+we can access though "SoftAssert" object
+SoftAssert sa=new SoftAssert(); sa.assertTrue();
+if soft assertion got failed then rest of the statemetns still execute.
+
+
+
+
+
+
+
 
 
 
