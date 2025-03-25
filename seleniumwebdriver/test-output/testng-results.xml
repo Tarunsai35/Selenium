@@ -1,33 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-25T15:38:15 IST" name="Suitgrouping" finished-at="2025-03-25T15:38:15 IST" duration-ms="264">
+  <suite started-at="2025-03-25T18:00:07 IST" name="Suite" finished-at="2025-03-25T18:00:46 IST" duration-ms="38816">
     <groups>
-      <group name="functional">
-        <method signature="PaymentTest.PaymentByFaceBook()[pri:1, instance:day_44.PaymentTest@795509d9]" name="PaymentByFaceBook" class="day_44.PaymentTest"/>
-        <method signature="PaymentTest.PaymentByTwitter()[pri:2, instance:day_44.PaymentTest@795509d9]" name="PaymentByTwitter" class="day_44.PaymentTest"/>
-      </group> <!-- functional -->
-      <group name="regression">
-        <method signature="PaymentTest.PaymentByFaceBook()[pri:1, instance:day_44.PaymentTest@795509d9]" name="PaymentByFaceBook" class="day_44.PaymentTest"/>
-        <method signature="PaymentTest.PaymentByTwitter()[pri:2, instance:day_44.PaymentTest@795509d9]" name="PaymentByTwitter" class="day_44.PaymentTest"/>
-      </group> <!-- regression -->
-      <group name="sanity">
-        <method signature="PaymentTest.PaymentByFaceBook()[pri:1, instance:day_44.PaymentTest@795509d9]" name="PaymentByFaceBook" class="day_44.PaymentTest"/>
-        <method signature="PaymentTest.PaymentByTwitter()[pri:2, instance:day_44.PaymentTest@795509d9]" name="PaymentByTwitter" class="day_44.PaymentTest"/>
-      </group> <!-- sanity -->
     </groups>
-    <test started-at="2025-03-25T15:38:15 IST" name="Testgrouping" finished-at="2025-03-25T15:38:15 IST" duration-ms="264">
-      <class name="day_44.PaymentTest">
-        <test-method signature="PaymentByFaceBook()[pri:1, instance:day_44.PaymentTest@795509d9]" started-at="2025-03-25T15:38:15 IST" name="PaymentByFaceBook" finished-at="2025-03-25T15:38:15 IST" duration-ms="32" status="PASS">
+    <test started-at="2025-03-25T18:00:07 IST" name="EdgeTest" finished-at="2025-03-25T18:00:36 IST" duration-ms="28938">
+      <class name="day_45.ParamTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:day_45.ParamTest@5b799640]" started-at="2025-03-25T18:00:08 IST" name="setup" finished-at="2025-03-25T18:00:28 IST" duration-ms="20558" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- PaymentByFaceBook -->
-        <test-method signature="PaymentByTwitter()[pri:2, instance:day_44.PaymentTest@795509d9]" started-at="2025-03-25T15:38:15 IST" name="PaymentByTwitter" finished-at="2025-03-25T15:38:15 IST" duration-ms="6" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="testLogo()[pri:1, instance:day_45.ParamTest@5b799640]" started-at="2025-03-25T18:00:28 IST" name="testLogo" finished-at="2025-03-25T18:00:28 IST" duration-ms="200" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- PaymentByTwitter -->
-      </class> <!-- day_44.PaymentTest -->
-    </test> <!-- Testgrouping -->
-  </suite> <!-- Suitgrouping -->
+        </test-method> <!-- testLogo -->
+        <test-method signature="testUrl()[pri:2, instance:day_45.ParamTest@5b799640]" started-at="2025-03-25T18:00:28 IST" name="testUrl" finished-at="2025-03-25T18:00:28 IST" duration-ms="89" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUrl -->
+        <test-method signature="testTitle()[pri:3, instance:day_45.ParamTest@5b799640]" started-at="2025-03-25T18:00:28 IST" name="testTitle" finished-at="2025-03-25T18:00:29 IST" duration-ms="59" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:day_45.ParamTest@5b799640]" started-at="2025-03-25T18:00:29 IST" name="tearDown" finished-at="2025-03-25T18:00:36 IST" duration-ms="7868" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- day_45.ParamTest -->
+    </test> <!-- EdgeTest -->
+    <test started-at="2025-03-25T18:00:07 IST" name="ChromeTest" finished-at="2025-03-25T18:00:39 IST" duration-ms="31702">
+      <class name="day_45.ParamTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:day_45.ParamTest@5386659f]" started-at="2025-03-25T18:00:08 IST" name="setup" finished-at="2025-03-25T18:00:28 IST" duration-ms="20204" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testLogo()[pri:1, instance:day_45.ParamTest@5386659f]" started-at="2025-03-25T18:00:28 IST" name="testLogo" finished-at="2025-03-25T18:00:28 IST" duration-ms="534" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogo -->
+        <test-method signature="testUrl()[pri:2, instance:day_45.ParamTest@5386659f]" started-at="2025-03-25T18:00:28 IST" name="testUrl" finished-at="2025-03-25T18:00:29 IST" duration-ms="400" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUrl -->
+        <test-method signature="testTitle()[pri:3, instance:day_45.ParamTest@5386659f]" started-at="2025-03-25T18:00:29 IST" name="testTitle" finished-at="2025-03-25T18:00:29 IST" duration-ms="488" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:day_45.ParamTest@5386659f]" started-at="2025-03-25T18:00:29 IST" name="tearDown" finished-at="2025-03-25T18:00:39 IST" duration-ms="9879" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- day_45.ParamTest -->
+    </test> <!-- ChromeTest -->
+    <test started-at="2025-03-25T18:00:08 IST" name="firefoxTest" finished-at="2025-03-25T18:00:46 IST" duration-ms="38755">
+      <class name="day_45.ParamTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:day_45.ParamTest@7a5ceedd]" started-at="2025-03-25T18:00:08 IST" name="setup" finished-at="2025-03-25T18:00:43 IST" duration-ms="35546" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testLogo()[pri:1, instance:day_45.ParamTest@7a5ceedd]" started-at="2025-03-25T18:00:43 IST" name="testLogo" finished-at="2025-03-25T18:00:43 IST" duration-ms="91" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogo -->
+        <test-method signature="testUrl()[pri:2, instance:day_45.ParamTest@7a5ceedd]" started-at="2025-03-25T18:00:43 IST" name="testUrl" finished-at="2025-03-25T18:00:43 IST" duration-ms="20" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUrl -->
+        <test-method signature="testTitle()[pri:3, instance:day_45.ParamTest@7a5ceedd]" started-at="2025-03-25T18:00:43 IST" name="testTitle" finished-at="2025-03-25T18:00:43 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:day_45.ParamTest@7a5ceedd]" started-at="2025-03-25T18:00:43 IST" name="tearDown" finished-at="2025-03-25T18:00:46 IST" duration-ms="3013" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- day_45.ParamTest -->
+    </test> <!-- firefoxTest -->
+  </suite> <!-- Suite -->
 </testng-results>

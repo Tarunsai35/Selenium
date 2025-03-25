@@ -114,5 +114,18 @@ SignupByTwitter --------- regression
 PaymentByFaceBoook -------- sanity, regression
 PaymentByTwitter ----- sanity, regression
 
+---------------------Day 45---------------------
+
+Parameterization: two types-->
+
+1.@DataProvider --- data driven testing
+2.Using xml file --- parallel testing 
+
+Using xml file:
+1.created test case
+2.create xml file then run test case through xml
+3.passed browser name, url as parameters from xml file to setup() method
+4.execute test case on chrome, firefox & Edge (serial execution)
+5.execute test case on chrome, firefox & edge (parallel execution
 
 
