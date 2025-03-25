@@ -82,12 +82,37 @@ we can access though "SoftAssert" object
 SoftAssert sa=new SoftAssert(); sa.assertTrue();
 if soft assertion got failed then rest of the statemetns still execute.
 
+----------------Day 44--------------------
+Dependency Methods:
 
+openapp
+login
+search
+adv search
+logout
 
+dependsOnMethods = {"m1","m2",...};
 
+Grouping:
 
+Class1 --- m1,m2,m3,......
+Class2 --- m4,m5,m6,......
+Class3 --- m7,m8,m9,......
 
+Sanity
+regression
+functional
 
+loginByEmail ------ sanity
+loginByFaceBook --- sanity
+loginByTwitter --------- sanity
+
+SignupByEmail ------ regression
+SignupByFaceBook --- regression
+SignupByTwitter --------- regression
+
+PaymentByFaceBoook -------- sanity, regression
+PaymentByTwitter ----- sanity, regression
 
 
 
