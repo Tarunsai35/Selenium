@@ -1,117 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-25T18:00:07 IST" name="Suite" finished-at="2025-03-25T18:00:46 IST" duration-ms="38816">
+  <suite started-at="2025-03-26T16:03:09 IST" name="Suite" finished-at="2025-03-26T16:03:25 IST" duration-ms="15738">
     <groups>
     </groups>
-    <test started-at="2025-03-25T18:00:07 IST" name="EdgeTest" finished-at="2025-03-25T18:00:36 IST" duration-ms="28938">
-      <class name="day_45.ParamTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:day_45.ParamTest@5b799640]" started-at="2025-03-25T18:00:08 IST" name="setup" finished-at="2025-03-25T18:00:28 IST" duration-ms="20558" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2025-03-26T16:03:09 IST" name="Test" finished-at="2025-03-26T16:03:25 IST" duration-ms="15738">
+      <class name="day_46.OrangrHRM">
+        <test-method is-config="true" signature="setup()[pri:0, instance:day_46.OrangrHRM@402c4085]" started-at="2025-03-26T16:03:10 IST" name="setup" finished-at="2025-03-26T16:03:24 IST" duration-ms="13905" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testLogo()[pri:1, instance:day_45.ParamTest@5b799640]" started-at="2025-03-25T18:00:28 IST" name="testLogo" finished-at="2025-03-25T18:00:28 IST" duration-ms="200" status="PASS">
+        <test-method signature="testLogo()[pri:1, instance:day_46.OrangrHRM@402c4085]" started-at="2025-03-26T16:03:24 IST" name="testLogo" finished-at="2025-03-26T16:03:24 IST" duration-ms="103" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogo -->
-        <test-method signature="testUrl()[pri:2, instance:day_45.ParamTest@5b799640]" started-at="2025-03-25T18:00:28 IST" name="testUrl" finished-at="2025-03-25T18:00:28 IST" duration-ms="89" status="PASS">
+        <test-method signature="testUrl()[pri:2, instance:day_46.OrangrHRM@402c4085]" started-at="2025-03-26T16:03:24 IST" name="testUrl" finished-at="2025-03-26T16:03:24 IST" duration-ms="34" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [https://opensource-demo.orangehrmlive.com] but found [https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [https://opensource-demo.orangehrmlive.com] but found [https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at day_46.OrangrHRM.testUrl(OrangrHRM.java:40)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUrl -->
-        <test-method signature="testTitle()[pri:3, instance:day_45.ParamTest@5b799640]" started-at="2025-03-25T18:00:28 IST" name="testTitle" finished-at="2025-03-25T18:00:29 IST" duration-ms="59" status="PASS">
+        <test-method signature="testTitle()[pri:0, instance:day_46.OrangrHRM@402c4085]" started-at="2025-03-26T16:03:24 IST" name="testTitle" finished-at="2025-03-26T16:03:24 IST" depends-on-methods="day_46.OrangrHRM.testUrl" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method day_46.OrangrHRM.testTitle() on instance day_46.OrangrHRM@402c4085 depends on not successfully finished methods 
+[day_46.OrangrHRM.testUrl() on instance day_46.OrangrHRM@402c4085]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method day_46.OrangrHRM.testTitle() on instance day_46.OrangrHRM@402c4085 depends on not successfully finished methods 
+[day_46.OrangrHRM.testUrl() on instance day_46.OrangrHRM@402c4085]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTitle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:day_45.ParamTest@5b799640]" started-at="2025-03-25T18:00:29 IST" name="tearDown" finished-at="2025-03-25T18:00:36 IST" duration-ms="7868" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:day_46.OrangrHRM@402c4085]" started-at="2025-03-26T16:03:24 IST" name="tearDown" finished-at="2025-03-26T16:03:25 IST" duration-ms="576" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- day_45.ParamTest -->
-    </test> <!-- EdgeTest -->
-    <test started-at="2025-03-25T18:00:07 IST" name="ChromeTest" finished-at="2025-03-25T18:00:39 IST" duration-ms="31702">
-      <class name="day_45.ParamTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:day_45.ParamTest@5386659f]" started-at="2025-03-25T18:00:08 IST" name="setup" finished-at="2025-03-25T18:00:28 IST" duration-ms="20204" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testLogo()[pri:1, instance:day_45.ParamTest@5386659f]" started-at="2025-03-25T18:00:28 IST" name="testLogo" finished-at="2025-03-25T18:00:28 IST" duration-ms="534" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLogo -->
-        <test-method signature="testUrl()[pri:2, instance:day_45.ParamTest@5386659f]" started-at="2025-03-25T18:00:28 IST" name="testUrl" finished-at="2025-03-25T18:00:29 IST" duration-ms="400" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUrl -->
-        <test-method signature="testTitle()[pri:3, instance:day_45.ParamTest@5386659f]" started-at="2025-03-25T18:00:29 IST" name="testTitle" finished-at="2025-03-25T18:00:29 IST" duration-ms="488" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTitle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:day_45.ParamTest@5386659f]" started-at="2025-03-25T18:00:29 IST" name="tearDown" finished-at="2025-03-25T18:00:39 IST" duration-ms="9879" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- day_45.ParamTest -->
-    </test> <!-- ChromeTest -->
-    <test started-at="2025-03-25T18:00:08 IST" name="firefoxTest" finished-at="2025-03-25T18:00:46 IST" duration-ms="38755">
-      <class name="day_45.ParamTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:day_45.ParamTest@7a5ceedd]" started-at="2025-03-25T18:00:08 IST" name="setup" finished-at="2025-03-25T18:00:43 IST" duration-ms="35546" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testLogo()[pri:1, instance:day_45.ParamTest@7a5ceedd]" started-at="2025-03-25T18:00:43 IST" name="testLogo" finished-at="2025-03-25T18:00:43 IST" duration-ms="91" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLogo -->
-        <test-method signature="testUrl()[pri:2, instance:day_45.ParamTest@7a5ceedd]" started-at="2025-03-25T18:00:43 IST" name="testUrl" finished-at="2025-03-25T18:00:43 IST" duration-ms="20" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUrl -->
-        <test-method signature="testTitle()[pri:3, instance:day_45.ParamTest@7a5ceedd]" started-at="2025-03-25T18:00:43 IST" name="testTitle" finished-at="2025-03-25T18:00:43 IST" duration-ms="12" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTitle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:day_45.ParamTest@7a5ceedd]" started-at="2025-03-25T18:00:43 IST" name="tearDown" finished-at="2025-03-25T18:00:46 IST" duration-ms="3013" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- day_45.ParamTest -->
-    </test> <!-- firefoxTest -->
+      </class> <!-- day_46.OrangrHRM -->
+    </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

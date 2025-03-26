@@ -128,4 +128,32 @@ Using xml file:
 4.execute test case on chrome, firefox & Edge (serial execution)
 5.execute test case on chrome, firefox & edge (parallel execution
 
+-------------------Day 46------------------------
+TestNG Listners:
+
+1.create test case
+2.create listener class
+3.create xml file and include both test case & listener class
+
+---> 2 ways to implement listener class
+
+Method1:
+class myListner implements ITestListener
+{
+	}
+
+Method2:
+class myListener extends TestListenerAdapter
+{
+	}
+
+
+
+
+
+
+
+
+
+
 

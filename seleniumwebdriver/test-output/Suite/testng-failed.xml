@@ -1,49 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" parallel="tests" name="EdgeTest(failed)">
-    <parameter name="browser" value="edge"/>
-    <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"/>
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="day_46.ExtentReportManager"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="day_45.ParamTest">
+      <class name="day_46.OrangrHRM">
         <methods>
-          <include name="tearDown"/>
-          <include name="testTitle"/>
           <include name="setup"/>
           <include name="testUrl"/>
-          <include name="testLogo"/>
-        </methods>
-      </class> <!-- day_45.ParamTest -->
-    </classes>
-  </test> <!-- EdgeTest(failed) -->
-  <test thread-count="5" parallel="tests" name="ChromeTest(failed)">
-    <parameter name="browser" value="chrome"/>
-    <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"/>
-    <classes>
-      <class name="day_45.ParamTest">
-        <methods>
-          <include name="testTitle"/>
-          <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="testUrl"/>
-          <include name="testLogo"/>
-        </methods>
-      </class> <!-- day_45.ParamTest -->
-    </classes>
-  </test> <!-- ChromeTest(failed) -->
-  <test thread-count="5" parallel="tests" name="firefoxTest(failed)">
-    <parameter name="browser" value="firefox"/>
-    <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"/>
-    <classes>
-      <class name="day_45.ParamTest">
-        <methods>
           <include name="tearDown"/>
           <include name="testTitle"/>
-          <include name="setup"/>
-          <include name="testUrl"/>
-          <include name="testLogo"/>
         </methods>
-      </class> <!-- day_45.ParamTest -->
+      </class> <!-- day_46.OrangrHRM -->
     </classes>
-  </test> <!-- firefoxTest(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
