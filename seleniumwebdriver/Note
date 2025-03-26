@@ -158,6 +158,33 @@ Two appraoches to create page object classes-->
 1.without using PageFactory
 2.using PageFactory
 
+------------Day 48----------------------
+
+Automation FrameWork:
+we organize automation project files/folder in structured manner
+
+Objective:
+1.Re-Usubility
+2.Maintainability
+3.Readability
+
+Types of FrameWork:
+1.Built-in: Testng, junit, cucumber, robot..etc
+2.customized(user defined):modular framework, data driven, keywork driven, hybrid driven...etc
+
+P
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
