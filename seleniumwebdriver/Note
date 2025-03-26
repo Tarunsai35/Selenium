@@ -147,7 +147,16 @@ class myListener extends TestListenerAdapter
 {
 	}
 
+---------------------Day 47-------------------
+POM(Page Object Module)
 
+Test case:
+locators
+test methodscode---validations+Actions
+
+Two appraoches to create page object classes-->
+1.without using PageFactory
+2.using PageFactory
 
 
 
