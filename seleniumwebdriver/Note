@@ -172,7 +172,22 @@ Types of FrameWork:
 1.Built-in: Testng, junit, cucumber, robot..etc
 2.customized(user defined):modular framework, data driven, keywork driven, hybrid driven...etc
 
-P
+Phases:
+1.Analysing AUT
+-->Number of pages
+-->what are all elements / how/ type what to automate / what we cannot automate
+2.choose test cases for automation
+-->100 Test cases
+-->90 automatable 10 cannot automate
+-->100% automation
+*sanity test cases P1
+*data driven test cases/re-tests - P2
+*Regression test cases -P3
+*Any other cases P4
+3.Design & Developement of framework
+4.Execution local, remotely
+5.Maintenace
+
 
 
 
